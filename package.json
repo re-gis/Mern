@@ -1,0 +1,27 @@
+{
+  "name": "mern_learn",
+  "version": "1.0.0",
+  "description": "Learn mern ",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server",
+    "dev": "nodemon server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/re-gis/Mern.git"
+  },
+  "author": "Regis",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/re-gis/Mern/issues"
+  },
+  "homepage": "https://github.com/re-gis/Mern#readme",
+  "dependencies": {
+    "color": "^4.2.3",
+    "colors": "^1.4.0",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "mongoose": "^6.8.3"
+  }
+}
