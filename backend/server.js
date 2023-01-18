@@ -1,10 +1,14 @@
 const { json } = require('express');
 const express = require('express');
 const dotenv = require('dotenv').config();
+const colors = require('colors');
+const connectDB = require('./config/db');
 const PORT = process.env.PORT || 5000;
-const { errorHandler } = require('./middleware/errorMiddleware')
+const { errorHandler } = require('./middleware/errorMiddleware');
+const { default: mongoose } = require('mongoose');
 
-
+mongoose.set('strictQuery',true);
+connectDB();
 
 const app = express();
 
